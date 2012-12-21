@@ -99,7 +99,7 @@ void* popper(void * arg){
 			printf("Read n:%d,scan %s,check %d\n",n,(char *)&scan,check);
 		}
 		if(check != REPEAT-i){
-			printf("Problem at %d for data %s with check : %d\n",REPEAT-i,(char *)data,check);
+			printf("Problem at %d for data %s with check : %d\n",REPEAT-i,data,(char *)check);
 		}	
 		//printf("popper %d data %s size: %d ,fifo size: %d\n",REPEAT-i,data,size,fifo_size(fifo));
 		free(data);
